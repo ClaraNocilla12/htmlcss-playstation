@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.jumbo_ret{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/jumbo-bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
+
+.btn-primary{
+    background-color: rgb(231, 86, 86) !important;
+    border: 1px solid rgb(231, 86, 86) !important;
+    border-radius: 30px !important;
+}
+
+.round{
+    border-radius: 15%;
+}
