@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./asset/css/style.css">
@@ -12,116 +15,147 @@
 </head>
 
 <body>
+    <header>
 
-    <div class="container-fluid">
-        <div class="row bg-black ">
-            <div class="col-9">
-
-            </div>
-            <div class="col-3 py-2">
-                <img src="./asset/img/sony_logo.svg" alt="">
-
-            </div>
+        <div class="py-2 py-md-3 bg-black text-end">
+            <img id="logo-sony" src="./asset/img/sony_logo.svg" alt="">
 
         </div>
 
 
-    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light col-lg-12">
-        <div class="container-fluid">
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"><img src="./asset/img/play_logo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Giochi</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Giochi</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Giochi</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Giochi
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <!-- <div class="dropdown-menu text-center d-flex flex-row justify-content-center border-0 bg-light my_dropdown"
+                            aria-labelledby="navbarDropdown">
+                            <div>
+                                <a class="dropdown-item my_ps_img" href="#"><img src="./asset/img/play-menu-ico.png"
+                                        class="my_ps_img img-fluid " alt=""></a>
+                                <a class="dropdown-item" href="#">PS3</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Link</a>
+                            </div>
+                            <div>
+                                <a class="dropdown-item my_ps_img" href="#"><img src="./asset/img/play-menu-ico.png"
+                                        class="my_ps_img img-fluid " alt=""></a>
+                                <a class="dropdown-item" href="#">PS4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Link</a>
+                            </div>
+                            <div>
+                                <a class="dropdown-item my_ps_img" href="#"><img src="./asset/img/play-menu-ico.png"
+                                        class="my_ps_img img-fluid " alt=""></a>
+                                <a class="dropdown-item" href="#">PS5</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Link</a>
+                            </div>
+                            
+
+                    
+                        </div> -->
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Hardware
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servizi
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Novità
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Fai acquisti
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Supporto
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
 
                 </ul>
-
-
-                <ul class="navbar-nav">
+                <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+                  
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My PlayStation
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li>
+
                     </li>
                 </ul>
+                <button type="button" class="btn btn-primary my_btn_head btn-sm rounded-pill">Acquista ora</button>
+                <i class="fa-solid fa-magnifying-glass mx-4"></i>
             </div>
+        </nav>
 
-        </div>
-    </nav>
-
-
-
-
+    </header>
 
 
 
@@ -134,10 +168,10 @@
     </div>
 
 
-    <!-- <div class=""> -->
-    <div class="jumbo_ret position-relative">
+   
+    <div class="jumbo_ret d-flex align-items-center">
 
-        <div class="position-absolute bottom-0 pb-5 ps-3">
+        <div class="ps-md-5 ps-2">
             <img src="./asset/img/returnal-hero-banner-logo.png" class="img-fluid w-50" alt="">
             <h2 class="text-light">
                 Rompi il cerchio
@@ -150,7 +184,7 @@
 
 
 
-        <!-- </div> -->
+     
 
 
 
@@ -161,9 +195,9 @@
     </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row py-3">
 
-            <img src="./asset/img/returnal-listing-thumb-01-ps5.jpg" class="col-6 col-sm-4 col-lg-2 my-3 round" alt="">
+            <img src="./asset/img/returnal-listing-thumb-01-ps5.jpg" class="col-6 col-sm-4 col-lg-2 my-3 round my_card" alt="">
 
             <img src="./asset/img/ratchet-and-clank-rift-apart-keyart.jpg" class="col-6 col-sm-4 col-lg-2 my-3 round"
                 alt="">
@@ -199,35 +233,36 @@
             <img src="./asset/img/playstation-5-thumb.png" class="col-12 col-md-6 img-fluid" alt="">
         </div>
 
-        <div class="row row-cols-3 row-cols-md-5 text-center">
+        <div class="row row-cols-3 row-cols-md-5 text-center mb-2">
 
-            <div class="col ">
+
+            <div class="col my_thumb">
                 <img src="./asset/img/playstation-5-thumb.png" class="img-fluid" alt="">
-                <span class="d-none d-md-block">ciao</span>
+                <span class="d-none d-md-block">Cuffie wireless con microfono PULSE 3</span>
             </div>
-            <div class="col ">
-                <img src="./asset/img/playstation-5-thumb.png" class="img-fluid" alt="">
-                <span class="d-none d-md-block">ciao</span>
+            <div class="col my_thumb">
+                <img src="./asset/img/joypad-thumb.png" class="img-fluid " alt="">
+                <span class="d-none d-md-block">Console PS5</span>
             </div>
-            <div class="col ">
-                <img src="./asset/img/playstation-5-thumb.png" class="img-fluid" alt="">
-                <span class="d-none d-md-block">ciao</span>
+            <div class="col my_thumb">
+                <img src="./asset/img/headset-thumb.png" class="img-fluid" alt="">
+                <span class="d-none d-md-block">Controller wireless Dualsense</span>
             </div>
-            <div class="col ">
-                <img src="./asset/img/playstation-5-thumb.png" class="img-fluid" alt="">
-                <span class="d-none d-md-block">ciao</span>
+            <div class="col my_thumb">
+                <img src="./asset/img/remote-thumb.png" class="img-fluid" alt="">
+                <span class="d-none d-md-block">Telecomando media</span>
             </div>
-            <div class="col ">
-                <img src="./asset/img/playstation-5-thumb.png" class="img-fluid" alt="">
-                <span class="d-none d-md-block">ciao</span>
+            <div class="col my_thumb">
+                <img src="./asset/img/camera-thumb.jpg" class="img-fluid" alt="">
+                <span class="d-none d-md-block">Telecamera HD</span>
             </div>
         </div>
     </div>
 
-    <!-- <div class=""> -->
-    <div class="jumbo_itt position-relative">
+    
+    <div class="jumbo_itt d-flex align-items-center">
 
-        <div class="position-absolute bottom-0 pb-5 ps-3">
+        <div class="ps-md-5 ps-2">
             <img src="./asset/img/it-takes-two-logo.png" class="img-fluid w-50" alt="">
             <h2 class="text-light">
                 Rompi il cerchio
@@ -250,56 +285,56 @@
             <span>Giochi incredibili per PS4 disponibili ora</span>
 
             <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6">
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" class="img-fluid py-2 round" alt="">
                     <span>Tony Hawk'sTm Pro SkaterTm 1 + 2</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" class="img-fluid py-2 round"
                         alt="">
                     <span>Crash Bandicoot 4: It's About Time</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" class="img-fluid py-2 round" alt="">
                     <span>Tony Hawk'sTm Pro SkaterTm 1 + 2</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" class="img-fluid py-2 round"
                         alt="">
                     <span>Crash Bandicoot 4: It's About Time</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" class="img-fluid py-2 round" alt="">
                     <span>Tony Hawk'sTm Pro SkaterTm 1 + 2</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" class="img-fluid py-2 round"
                         alt="">
                     <span>Crash Bandicoot 4: It's About Time</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" class="img-fluid py-2 round" alt="">
                     <span>Tony Hawk'sTm Pro SkaterTm 1 + 2</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" class="img-fluid py-2 round"
                         alt="">
                     <span>Crash Bandicoot 4: It's About Time</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" class="img-fluid py-2 round" alt="">
                     <span>Tony Hawk'sTm Pro SkaterTm 1 + 2</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" class="img-fluid py-2 round"
                         alt="">
                     <span>Crash Bandicoot 4: It's About Time</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/tony-hawks-pro-skater-1-2-store-art.jpg" class="img-fluid py-2 round" alt="">
                     <span>Tony Hawk'sTm Pro SkaterTm 1 + 2</span>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                     <img src="./asset/img/crash-bandicoot-4-its-about-time-store-art.jpg" class="img-fluid py-2 round"
                         alt="">
                     <span>Crash Bandicoot 4: It's About Time</span>
@@ -318,7 +353,7 @@
                 Non c'è mai stato un momento migliore per giocare sulla tua PS4 </span>
 
         </div>
-        <div class="row row-col-1 row-col-md-3 py-5">
+        <div class="row row-cols-1 row-cols-md-3 py-5">
             <div class="col">
                 <img src="./asset/img/ps4-slim-homepage-image-block.jpg" class="img-fluid mt-3" alt="">
                 <h3>PlayStation 4</h3>
@@ -354,7 +389,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-12">
-                    <img src="./asset/img/ps-plus-logo.png" class="img-fluid w-75 my-2 my-md-0 mt-4" alt=""> <br>
+                    <img src="./asset/img/ps-plus-logo.png" class="img-fluid w-50 my-2 my-md-0 mt-4" alt=""> <br>
                     <span class="py-2">Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online,
                         giochi mensili, sconti esclusivi e altro ancora</span> <br>
                     <button type="button"
@@ -381,9 +416,9 @@
             posto.</span>
         <!-- </div> -->
         <div class="row row-cols-1 row-cols-md-3 mb-3">
-            <img src="./asset/img/playstation-store-games-under-20-spotlight.jpg" class="img-fluid my-3" alt="">
-            <img src="./asset/img/playstation-store-golden-week-sale-spotlight.jpg" class="img-fluid my-3" alt="">
-            <img src="./asset/img/playstation-store-free-to-play-spotlight.png" class="img-fluid my-3" alt="">
+            <img src="./asset/img/playstation-store-games-under-20-spotlight.jpg" class="img-fluid my-3 col" alt="">
+            <img src="./asset/img/playstation-store-golden-week-sale-spotlight.jpg" class="img-fluid my-3 col" alt="">
+            <img src="./asset/img/playstation-store-free-to-play-spotlight.png" class="img-fluid my-3 col" alt="">
 
         </div>
     </div>
@@ -412,12 +447,23 @@
 
     <div class="container text-center my-5">
         <h2>Seguici sui social media</h2>
-        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 justify-content-center">
-            <img src="./asset/img/twitter.jpg" class="img-fluid my-3" alt="">
-            <img src="./asset/img/facebook.jpg" class="img-fluid my-3" alt="">
-            <img src="./asset/img/instagram.jpg" class="img-fluid my-3" alt="">
-            <img src="./asset/img/youtube.png" class="img-fluid my-3" alt="">
 
+
+        <div class="row  justify-content-center">
+            <div class="col-2 col-md-4">
+
+            </div>
+
+            <img src="./asset/img/twitter.jpg" class="img-fluid my-3 col-md-1 col-4" alt="">
+            <img src="./asset/img/facebook.jpg" class="img-fluid my-3 col-md-1 col-4" alt="">
+            <div class="col-2 d-md-none"></div>
+            <div class="col-2 d-md-none"></div>
+            <img src="./asset/img/instagram.jpg" class="img-fluid my-3 col-md-1 col-4" alt="">
+            <img src="./asset/img/youtube.png" class="img-fluid my-3 col-md-1 col-4" alt="">
+
+            <div class="col-2 col-md-4">
+
+            </div>
         </div>
 
 
@@ -425,57 +471,64 @@
 
     <div class="container-fluid my_bg_foot">
         <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <img src="./asset/img/ps-footer.svg" alt="">
+            <div class="row text-white flex-md-column flex-lg-row">
+                <div class="col-md-6 col-12">
+                    <img src="./asset/img/ps-footer.svg" class="img-fluid my-3" alt="">
                     <div>
                         Country/ Region:Italy;
                     </div>
+    
 
                 </div>
-                <div class="col-6 d-flex flex-row">
-                    <ul>
+                <div class="col-md-12 col-lg-6 col-12 my-2 flex-column d-flex flex-md-row justify-content-md-between">
+                    <ul class="list-unstyled">
                         <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                         <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                         <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                         <li>
-                            <a href="">link</a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                         <li>
-                            <a href="">link</a>
-                        </li>
-                        <li>
-                            <a href="">link</a>
-                        </li>
-                        <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                     </ul>
 
-                    <ul>
+                    <ul class="list-unstyled">
                         <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                         <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                         <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                         <li>
-                            <a href="">link</a>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
+                        </li>
+                    </ul>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-white" href="">link footer n</a>
                         </li>
                     </ul>
 
@@ -484,15 +537,15 @@
                 </div>
 
                 <div class="row text-light">
-                    <img src="./asset/img/sie-logo.svg" class="img-fluid col-1" alt="">
+                    <img src="./asset/img/sie-logo.svg" class="col-6 col-md-4" alt="">
 
-                    <div class="col-11">
+                    <div class="col-6 col-md-10">
 
                     </div>
 
                 </div>
                 <div class="text-light">
-                    <div class="col-5">
+                    <div class="col-12">
                         <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eos autem eius
                             explicabo
                             perspiciatis nisi

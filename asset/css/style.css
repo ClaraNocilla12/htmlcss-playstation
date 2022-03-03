@@ -4,6 +4,60 @@
     box-sizing: border-box;
 }
 
+#logo-sony{
+    height: 20px;
+}
+
+.my_btn_head{
+    background-color: rgb(0, 0, 0) !important;
+    border:1px solid black !important;
+}
+
+.my_btn_head:hover{
+    background-color: rgb(0, 0, 0) !important;
+    border:2px solid black !important;
+    box-shadow: inset 0px 0px 0px 2px white;
+}
+
+.my_btn:hover{
+    box-shadow: inset 0px 0px 0px 2px rgb(0, 0, 0);
+    color: white;
+
+}
+
+
+.my_thumb{
+    
+    opacity: 0.6;
+}
+
+.my_thumb:hover{
+    border-bottom: 2px solid blue !important;
+    opacity: 1.0 !important;
+}
+
+.btn-primary:hover{
+    border:2px solid rgb(0, 68, 155) !important;
+    box-shadow: inset 0px 0px 0px 2px white;
+}
+
+
+/* .my_dropdown{
+    width: 90vw !important;
+    height: 40vh !important;
+    display:none !important;
+}
+
+.my_dropdown:hover{
+    width: 90vw !important;
+    height: 40vh !important;
+    display:block !important;
+}
+
+.my_ps_img{
+    
+    height: 10vh !important;
+} */
 
 
 .jumbo_ret{
@@ -28,7 +82,7 @@
 
 .my_btn{
     background-color: rgb(231, 86, 86) !important;
-    border: 1px solid rgb(231, 86, 86) !important;
+    border: 2px solid rgb(231, 86, 86) !important;
    
     color:white;
 }
@@ -36,7 +90,7 @@
 
 
 .round{
-    border-radius: 15%;
+    border-radius: 10%;
 }
 
 /* box-shadow: insect 0px 0px 0px 2px white */
@@ -56,4 +110,5 @@
 
 .my_bg_foot{
 background-color: #00449B;
+
 }
